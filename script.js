@@ -39,6 +39,7 @@ const generateResponse = (incomingChatLI) => {
       messageElement.textContent = data.choices[0].message.content;
     })
     .catch((error) => {
+    console.log(error)
       messageElement.textContent =
         "Oops! Something went wrong. Please try again😥"+ error
     })
