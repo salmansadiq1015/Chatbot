@@ -41,6 +41,7 @@ const generateResponse = (incomingChatLI) => {
     .catch((error) => {
       messageElement.textContent =
         "Oops! Something went wrong. Please try again😥";
+       error
     })
     .finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
 };
